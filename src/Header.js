@@ -23,7 +23,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="container">
-        <Link to="/">
+        <Link to="/" onClick={() => this.linkClicked(0)}>
             <div className="text-center">
               <img
                 src={vdiLogo}
