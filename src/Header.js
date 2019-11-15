@@ -7,8 +7,8 @@ class Header extends React.Component {
   constructor() {
     super();
     this.state = { selected: 0 };
-	this.linkClicked = this.linkClicked.bind(this);
-	
+    this.linkClicked = this.linkClicked.bind(this);
+
     this.links = [
       { text: "Présentation", link: "/" },
       { text: "Spécialité", link: "/specialite" },
@@ -24,13 +24,13 @@ class Header extends React.Component {
     return (
       <div className="container">
         <Link to="/" onClick={() => this.linkClicked(0)}>
-            <div className="text-center">
-              <img
-                src={vdiLogo}
-                alt="VDI Logo"
-                className="slow-fadein"
-                id="vdi-logo"
-              />
+          <div className="text-center">
+            <img
+              src={vdiLogo}
+              alt="VDI Logo"
+              className="slow-fadein"
+              id="vdi-logo"
+            />
           </div>
         </Link>
 
@@ -39,7 +39,7 @@ class Header extends React.Component {
             {this.links.map((navlink, i) => {
               return (
                 <NavLink
-				  key={i}
+                  key={i}
                   className="navbar-text"
                   onClick={() => this.linkClicked(i)}
                   to={navlink.link}
