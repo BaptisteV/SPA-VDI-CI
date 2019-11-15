@@ -24,7 +24,6 @@ class Header extends React.Component {
     return (
       <div className="container">
         <Link to="/">
-          <div className="col-md-12">
             <div className="text-center">
               <img
                 src={vdiLogo}
@@ -32,15 +31,15 @@ class Header extends React.Component {
                 className="slow-fadein"
                 id="vdi-logo"
               />
-            </div>
           </div>
         </Link>
 
         <div className="row">
-          <nav className="navbar navbar-light col-md-12 rounded">
+          <nav className="navbar col navbar-light rounded">
             {this.links.map((navlink, i) => {
               return (
                 <NavLink
+				  key={i}
                   className="navbar-text"
                   onClick={() => this.linkClicked(i)}
                   to={navlink.link}
