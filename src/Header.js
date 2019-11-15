@@ -11,7 +11,7 @@ class Header extends React.Component {
 	
     this.links = [
       { text: "Présentation", link: "/" },
-      { text: "Specialité", link: "/specialite" },
+      { text: "Spécialité", link: "/specialite" },
       { text: "Contact", link: "/contact" }
     ];
   }
