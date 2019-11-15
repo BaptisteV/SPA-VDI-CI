@@ -35,8 +35,8 @@ class Presentation extends React.Component {
 			<div className="container quick-fadein">
 				<PageTopImage src={portraitImage} alt="Portrait" />
 				<div className="row">
-					<div className="col-md-12">
-						<h3>Presentation</h3>
+					<div className="col">
+						<h3>Présentation</h3>
 						<hr />
 						{this.content.presentation.map((paragraph, i) => {
 							return <p key={i}>{paragraph}</p>;
@@ -47,19 +47,20 @@ class Presentation extends React.Component {
 				<h3>Diagnostics</h3>
 				<hr />
 				<div className="row">
-					<div className="col-md-4"></div>
-					<ul className="list-group">
+					<div className="col-2"></div>
+					<ul className="list-group col-8">
 						{this.content.disagnostics.map((diag, i) => {
 							return <li key={i} className="list-group-item">{diag}</li>;
 						})}
 					</ul>
+					<div className="col-2"></div>
 				</div>
 				<EmptySpacer />
 				<h3>Liens utiles</h3>
 				<hr />
 				<div className="row">
-					<div className="col-md-4"></div>
-					<ul className="list-group">
+					<div className="col-2"></div>
+					<ul className="list-group col-8">
 						{this.content.links.map((linksItem, i) => {
 							return (
 								<li className="list-group-item">
@@ -73,6 +74,7 @@ class Presentation extends React.Component {
 							);
 						})}
 					</ul>
+					<div className="col-2"></div>
 				</div>
 				<EmptySpacer />
 			</div>

@@ -58,13 +58,13 @@ class Contact extends React.Component {
         </div>
         <EmptySpacer />
         <div className="row">
-          <div className="col-md-4"></div>
-          <ul className="list-group col-md-4">
+          <div className="col-lg-4 col-xs-2"></div>
+          <ul className="list-group col-lg-4 col-xs-10">
             <li className="list-group-item">Viloin Diagnostic Immobilier</li>
             <li className="list-group-item">377 rue Gauthier</li>
             <li className="list-group-item">21850 Saint-Apollinaire</li>
           </ul>
-          <div className="col-md-4"></div>
+          <div className="col-lg-4 col-xs-2"></div>
         </div>
         <EmptySpacer />
         {map}
