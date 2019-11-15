@@ -32,7 +32,7 @@ class Header extends React.Component {
 				<Link to="/">
 					<div className="col-md-12">
 						<div className="text-center">
-							<img src={vdiLogo} alt="VDI Logo" id="vdi-logo" />
+							<img src={vdiLogo} alt="VDI Logo" className="slow-fadein" id="vdi-logo"/>
 						</div>
 					</div>
 				</Link>

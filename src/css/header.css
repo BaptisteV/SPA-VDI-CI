@@ -3,6 +3,9 @@
 	max-width: 100%;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.slow-fadein {
 	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 1.5s; /* Firefox < 16 */
 	-ms-animation: fadein 1.5s; /* Internet Explorer */
