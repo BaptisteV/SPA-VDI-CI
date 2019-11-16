@@ -83,7 +83,7 @@ class Presentation extends React.Component {
           <ul className="list-group">
             {this.content.disagnostics.map((diag, i) => {
               return (
-                <ol>
+                <ol key={i}>
                   <h5>{diag.title}</h5>
                   <p>{diag.text}</p>
 				  <EmptySpacer />
