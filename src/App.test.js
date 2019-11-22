@@ -21,6 +21,7 @@ it("contains an image at the top of each page", () => {
     shallow(<Presentation />),
     shallow(<Specialite />)
   ];
+  
   pages.forEach(page => {
     expect(page.find(PageTopImage)).toHaveLength(1);
   });
